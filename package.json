@@ -2,6 +2,7 @@
   "name": "interactive-agency",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "git@github.com:nemmtor/interactive-agency.git",
   "author": "nemmtor <kacper0witas@gmail.com>",
   "license": "MIT"
 }
