@@ -4,6 +4,7 @@
     url('../../assets/headerbg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 10rem var(--section-padding-desktop-xl);
   display: flex;
   flex-direction: column;

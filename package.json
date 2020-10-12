@@ -12,5 +12,8 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-clean-dist": "^0.0.6"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
   }
 }

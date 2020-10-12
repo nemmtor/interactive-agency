@@ -1,0 +1,67 @@
+.section--best {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1rem;
+  padding: 0;
+  color: var(--text-color-light);
+  background: black;
+  position: relative;
+}
+
+.section--best::after {
+  z-index: 1000;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.best__article {
+  padding: 10rem 0;
+}
+
+.best__article:first-child {
+  padding-left: var(--section-padding-desktop-xl);
+  padding-right: 8rem;
+  background: url('../../assets/bestat/bestat1.png');
+  background-size: cover;
+}
+
+.best__article:last-child {
+  padding-right: var(--section-padding-desktop-xl);
+  padding-left: 8rem;
+  background: url('../../assets/bestat/bestat2.png');
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.best__article:last-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.best__article-heading {
+  font-size: 4.8em;
+  font-weight: normal;
+  margin-bottom: 2.5rem;
+}
+.best__article-heading span {
+  font-weight: bold;
+}
+
+.best__article-text {
+  font-size: 1.6em;
+  line-height: 1.5;
+  padding-bottom: 4rem;
+}
