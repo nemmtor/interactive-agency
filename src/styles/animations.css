@@ -1,0 +1,43 @@
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes burger-open-topbar {
+  0% {
+    transform: translateY(-6px);
+  }
+
+  30% {
+    transform: translateY(2px);
+  }
+
+  60% {
+    transform: translateY(2px);
+  }
+
+  100% {
+    transform: translateY(2px) rotate(45deg);
+  }
+}
+@keyframes burger-open-bottombar {
+  0% {
+    transform: translateY(6px);
+  }
+
+  30% {
+    transform: translateY(-2px);
+  }
+
+  60% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(-2px) rotate(-45deg);
+  }
+}

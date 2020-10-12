@@ -1,0 +1,14 @@
+:root {
+  --section-padding-desktop-xl: 28rem;
+  --section-padding-desktop-l: 20rem;
+  --section-padding-desktop-s: 8rem;
+  --section-padding-tablet: 4rem;
+  --text-color-light: #eee;
+  --color-dark: #333;
+  --nav-height: 15rem;
+  --gradient-fancy: linear-gradient(
+    45deg,
+    rgba(110, 3, 181, 1) 15%,
+    rgba(181, 3, 129, 1) 85%
+  );
+}

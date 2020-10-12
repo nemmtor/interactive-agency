@@ -10,34 +10,78 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
     <title>Interactive agency</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class="nav">
         <img
           class="nav__logo"
           src="./assets/logo.png"
           alt="Interactive agency"
         />
+        <button class="nav__burger">
+          <div class="nav__burger-bar"></div>
+          <div class="nav__burger-bar"></div>
+          <div class="nav__burger-bar"></div>
+        </button>
         <ul class="nav__menu">
-          <li class="nav__menu-item">Home</li>
-          <li class="nav__menu-item">About us</li>
-          <li class="nav__menu-item">Offer</li>
-          <li class="nav__menu-item">Portfolio</li>
-          <li class="nav__menu-item">Contact</li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#home" data-scroll>Home</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#about" data-scroll>About us</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#offer" data-scroll>Offer</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#portfolio" data-scroll
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__cta" href="#contact" data-scroll>
+              Contact
+            </button>
+          </li>
         </ul>
       </nav>
       <h1 class="header__heading">Lorem ipsum dolor sit amet</h1>
       <p class="header__paragraph">
         Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
       </p>
-      <p class="cta">Ask for price</p>
+      <button class="header__cta cta" href="#contact" data-scroll>
+        Ask for price
+      </button>
       <div class="header__scrolldown-container">
-        <img class="header__scrolldown-mouse" src="" alt="Computer mouse" />
+        <img
+          class="header__scrolldown-mouse"
+          src="assets/mouse.png"
+          alt="Computer mouse"
+        />
         <p class="header__scrolldown-text">scroll down</p>
       </div>
     </header>
+
+    <section class="section" id="about">
+      <h2 class="section__header">What we do?</h2>
+      <ul class="about__item-list">
+        <li class="about__item">1</li>
+        <li class="about__item">2</li>
+        <li class="about__item">3</li>
+        <li class="about__item">4</li>
+      </ul>
+    </section>
+
+    <div class="scrolltop" href="#home" data-scroll>
+      <img class="scrolltop__arrow" src="assets/arrowup.svg" alt="scroll top" />
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>

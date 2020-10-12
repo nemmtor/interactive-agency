@@ -1,7 +1,3 @@
-:root {
-  --section-padding-xl: 28rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +7,25 @@
 html {
   font-size: 62.5%;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
+}
+
+.cta {
+  background-image: var(--gradient-fancy);
+  padding: 1.4rem 5rem;
+  border: none;
+  border-radius: 2rem;
+  color: var(--text-color-light);
+  transition: filter 0.2s ease-out;
+  letter-spacing: 0.05em;
+  font-size: 1.6rem;
+}
+
+.cta:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
 }

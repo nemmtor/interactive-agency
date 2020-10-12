@@ -1,0 +1,22 @@
+.scrolltop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background-image: var(--gradient-fancy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.scrolltop__arrow {
+  height: 4rem;
+}
+
+.scrolltop:hover {
+  transform: scale(1.3);
+}
