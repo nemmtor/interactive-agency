@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "git@github.com:nemmtor/interactive-agency.git",
   "author": "nemmtor <kacper0witas@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "^0.0.6"
+  }
 }
