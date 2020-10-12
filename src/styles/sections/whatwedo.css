@@ -1,0 +1,27 @@
+.whatwedo__item-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  gap: 100px;
+}
+
+.whatwedo__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  font-size: 2.4em;
+}
+
+.whatwedo__item-img {
+  grid-row: 1 / 3;
+  margin-right: 4.5rem;
+}
+
+.whatwedo__item-title {
+  margin-bottom: 2rem;
+}
+
+.whatwedo__item-text {
+  opacity: 0.5;
+  line-height: 1.5;
+}

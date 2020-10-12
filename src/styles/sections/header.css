@@ -1,7 +1,7 @@
 .header {
   font-size: 1rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1)),
-    url('../assets/headerbg.png');
+    url('../../assets/headerbg.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem var(--section-padding-desktop-xl);
