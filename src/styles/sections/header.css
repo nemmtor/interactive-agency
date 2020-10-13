@@ -286,3 +286,9 @@
     min-height: 100vh;
   }
 }
+
+@media all and (max-width: 450px) {
+  .header__cta {
+    margin-bottom: 4rem;
+  }
+}
