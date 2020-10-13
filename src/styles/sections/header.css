@@ -185,6 +185,12 @@
   }
 }
 
+@media all and (max-width: 1200px) {
+  .header {
+    padding: 4rem var(--section-padding-desktop-s);
+  }
+}
+
 @media all and (max-width: 1025px) {
   .header {
     padding: 4rem var(--section-padding-desktop-s);
@@ -287,8 +293,8 @@
   }
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 500px) {
   .header__cta {
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
 }
