@@ -24,4 +24,4 @@ var e,t=arguments[3];!function(t,n){"object"==typeof exports&&"undefined"!=typeo
 },{"aos":"RKkx","aos/dist/aos.css":"DOAq"}],"A2T1":[function(require,module,exports) {
 "use strict";require("normalize.css"),require("./styles.css"),require("./utils/loadingscreen"),require("./utils/slider"),require("./utils/scrolling");
 },{"normalize.css":"DOAq","./styles.css":"Tnu0","./utils/loadingscreen":"Mjhb","./utils/slider":"g0mM","./utils/scrolling":"dgY0"}]},{},["A2T1"], null)
-//# sourceMappingURL=/app.5e8f5c1e.js.map
+//# sourceMappingURL=app.c8dc6efe.js.map
