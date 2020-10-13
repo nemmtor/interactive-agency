@@ -8,7 +8,7 @@
   "homepage": "https://nemmtor.github.io/interactive-agency",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
     "deploy:gh": "gh-pages -d dist"
   },
   "devDependencies": {
