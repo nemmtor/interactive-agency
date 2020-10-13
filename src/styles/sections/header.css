@@ -1,7 +1,12 @@
 .header {
   font-size: 1rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1)),
-    url("../../assets/headerbg.png");
+  /* background-image: linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(0, 0, 0, 0) 50%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1)),
+    url("../../assets/headerbg.png"); */
+  background-image: url("../../assets/headerbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -11,6 +16,26 @@
   align-items: center;
   box-shadow: inset 0 6rem rgba(0, 0, 0, 0.2);
   min-height: 100vh;
+
+  z-index: 1;
+
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(0, 0, 0, 0) 50%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1));
+  background-attachment: scroll;
 }
 
 .nav {
