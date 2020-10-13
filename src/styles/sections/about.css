@@ -1,0 +1,64 @@
+.section--about {
+  background-image: url('../../assets/about/aboutbg.png');
+  background-size: cover;
+  background-position: center center;
+  color: var(--text-color-light);
+  font-size: 1rem;
+}
+
+.section--about .section__heading {
+  margin-bottom: 2rem;
+}
+
+.about__text {
+  opacity: 0.6;
+  max-width: 65rem;
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 12rem;
+}
+
+.about__people {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8rem;
+  margin-bottom: 12rem;
+}
+
+.about__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about__person-face {
+  margin-bottom: 2.5rem;
+}
+
+.about__person-name {
+  font-size: 2.4em;
+  margin-bottom: 2rem;
+}
+
+.about__person-details {
+  font-size: 1.6em;
+  opacity: 0.7;
+  max-width: 21rem;
+}
+
+@media all and (max-width: 901px) {
+  .about__people {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 600px) {
+  .about__text {
+    margin-bottom: 8rem;
+  }
+
+  .about__people {
+    grid-template-columns: 1fr;
+  }
+}

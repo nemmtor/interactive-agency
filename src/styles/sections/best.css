@@ -10,7 +10,7 @@
 
 .section--best::after {
   z-index: 1000;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -27,21 +27,23 @@
 .best__article:first-child {
   padding-left: var(--section-padding-desktop-xl);
   padding-right: 8rem;
-  background: url("../../assets/bestat/bestat1.png");
+  background: url('../../assets/bestat/bestat1.png');
   background-size: cover;
+  background-position: center center;
 }
 
 .best__article:last-child {
   padding-right: var(--section-padding-desktop-xl);
   padding-left: 8rem;
-  background: url("../../assets/bestat/bestat2.png");
+  background: url('../../assets/bestat/bestat2.png');
   background-size: cover;
+  background-position: center center;
   position: relative;
   z-index: 1;
 }
 
 .best__article:last-child::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
