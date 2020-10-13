@@ -1,8 +1,10 @@
 :root {
   --section-padding-desktop-xl: 28rem;
   --section-padding-desktop-l: 20rem;
+  --section-padding-desktop-m: 12rem;
   --section-padding-desktop-s: 8rem;
   --section-padding-tablet: 4rem;
+  --section-padding-mobile: 2rem;
   --text-color-light: #eee;
   --color-dark: #333;
   --nav-height: 15rem;
@@ -10,5 +12,10 @@
     45deg,
     rgba(110, 3, 181, 1) 15%,
     rgba(181, 3, 129, 1) 85%
+  );
+  --gradient-fancy--reverse: linear-gradient(
+    45deg,
+    rgba(181, 3, 129, 1) 15%,
+    rgba(110, 3, 181, 1) 85%
   );
 }

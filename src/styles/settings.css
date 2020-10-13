@@ -23,9 +23,27 @@ body {
   transition: filter 0.2s ease-out;
   letter-spacing: 0.05em;
   font-size: 1.6rem;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
-.cta:hover {
-  cursor: pointer;
-  filter: brightness(1.2);
+.cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(209, 4, 147);
+  transform-origin: left;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  z-index: -1;
+}
+
+.cta:hover::after {
+  opacity: 1;
 }
