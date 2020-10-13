@@ -1,0 +1,14 @@
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.6rem;
+  background: var(--color-dark);
+  color: var(--text-color-light);
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  color: #fff;
+  font-weight: bold;
+}

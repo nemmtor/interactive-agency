@@ -1,0 +1,9 @@
+.map-container {
+  height: 60rem;
+  filter: grayscale(1);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
