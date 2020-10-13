@@ -1,5 +1,5 @@
 .section {
-  padding: 10rem var(--section-padding-desktop-xl);
+  padding: 10rem var(--section-padding-desktop-xl) 25rem;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -14,13 +14,13 @@
 
 @media all and (max-width: 1601px) {
   .section {
-    padding: 6rem var(--section-padding-desktop-l);
+    padding: 6rem var(--section-padding-desktop-l) 15rem;
   }
 }
 
 @media all and (max-width: 1441px) {
   .section {
-    padding: 6rem var(--section-padding-desktop-m);
+    padding: 6rem var(--section-padding-desktop-m) 12rem;
   }
 }
 

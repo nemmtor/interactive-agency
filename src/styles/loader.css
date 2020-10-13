@@ -57,13 +57,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100000;
+  z-index: 100;
   transition: opacity 1s 0.5s ease;
 }
 
 .loader-wrapper--faded {
   pointer-events: none;
   opacity: 0;
+  /* display: none; */
 }
 
 .loader {

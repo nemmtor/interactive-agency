@@ -7,7 +7,8 @@ burger.addEventListener("click", () => {
 });
 
 scrollTriggers.forEach((trigger) => {
-  trigger.addEventListener("click", () => {
+  trigger.addEventListener("click", (e) => {
+    e.preventDefault();
     nav.classList.remove("nav--open");
     const href = trigger.getAttribute("href");
     window.location = href;

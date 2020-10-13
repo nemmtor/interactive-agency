@@ -3,14 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Normalize CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -73,7 +65,7 @@
       </div>
     </header>
 
-    <section class="section section--best">
+    <section class="section section--best" id="offer">
       <article class="best__article">
         <h2 class="best__article-heading" data-aos="fade-up">
           <span>Best</span><span>Design</span>
@@ -103,7 +95,7 @@
         </p>
         <button
           class="best__article-cta cta"
-          href="contact"
+          href="#contact"
           data-scroll
           data-aos="fade-in"
         >
@@ -169,6 +161,42 @@
         </li>
       </ul>
     </section>
+
+    <div class="glide" id="portfolio">
+      <div class="glide__overlay">
+        <div class="glide__overlay-inner">
+          <h3 class="glide__overlay-header">Neptune template</h3>
+          <p class="glide__overlay-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima,
+            corrupti? Nam quas fugit ipsam ea excepturi laborum iste natus minus
+            quidem nihil.
+          </p>
+          <button class="cta" href="#home" data-scroll>Watch more</button>
+        </div>
+      </div>
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <img src="assets/glide/glide1.png" alt="website" />
+          </li>
+          <li class="glide__slide">
+            <img src="assets/glide/glide2.png" alt="website" />
+          </li>
+          <li class="glide__slide">
+            <img src="assets/glide/glide3.png" alt="website" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          &lt;
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          &gt;
+        </button>
+      </div>
+    </div>
 
     <div class="scrolltop" href="#home" data-scroll>
       <img class="scrolltop__arrow" src="assets/arrowup.svg" alt="scroll top" />

@@ -1,0 +1,116 @@
+.glide {
+  position: relative;
+  height: 48rem;
+  width: 20rem;
+  font-size: 1rem;
+}
+
+.glide__track {
+  height: 100%;
+}
+.glide__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  text-align: center;
+}
+
+.glide__overlay-inner {
+  background: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px black;
+}
+
+.glide__overlay-header {
+  font-size: 3.6em;
+  margin-bottom: 2.5rem;
+}
+
+.glide__overlay-text {
+  line-height: 1.5;
+  margin-bottom: 6rem;
+  max-width: 40rem;
+  font-size: 1.6em;
+}
+
+.glide__slides {
+  height: 100%;
+}
+
+.glide__slide {
+  border: 1px solid black;
+  text-align: center;
+  height: 100%;
+}
+
+.glide__arrow {
+  border: none;
+  font-size: 11px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 3rem;
+  font-weight: 400;
+  border: none;
+  z-index: 100;
+
+  transform: translateY(-50%);
+  transition: filter 0.2s ease;
+}
+
+.glide__arrow:hover {
+  filter: brightness(0.6);
+}
+
+.glide__arrow--left {
+  left: 1rem;
+}
+
+.glide__arrow--right {
+  right: 1rem;
+}
+
+@media all and (max-width: 801px) {
+  .glide__overlay-inner {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 601px) {
+  .glide__arrow {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+  }
+
+  .glide__arrow--left {
+    left: 0;
+  }
+
+  .glide__arrow--right {
+    right: 0;
+  }
+
+  .glide__overlay-text {
+    padding: 0 4rem;
+  }
+}
