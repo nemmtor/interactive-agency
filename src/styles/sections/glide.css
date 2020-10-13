@@ -1,7 +1,5 @@
 .glide {
   position: relative;
-  /* height: 48rem; */
-  /* width: 20rem; */
   font-size: 1rem;
 }
 
@@ -103,18 +101,41 @@
   right: 1rem;
 }
 
-@media all and (max-width: 801px) {
+@media all and (max-width: 1024px) {
+  .glide__overlay-header {
+    margin-bottom: 2rem;
+  }
+  .glide__overlay-text {
+    margin-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 901px) {
+  .glide {
+    height: 60rem;
+  }
   .glide__overlay-inner {
     width: 100%;
+  }
+
+  .glide__overlay-header {
+    margin-bottom: 4rem;
+  }
+
+  .glide__overlay-text {
+    margin-bottom: 4rem;
   }
 }
 
 @media all and (max-width: 601px) {
+  .glide {
+    height: unset;
+  }
   .glide__arrow {
-    height: 4rem;
-    width: 4rem;
-    line-height: 4rem;
-    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.6rem;
   }
 
   .glide__arrow--left {
@@ -127,5 +148,11 @@
 
   .glide__overlay-text {
     padding: 0 4rem;
+  }
+  .glide__overlay-header {
+    margin-bottom: 1rem;
+  }
+  .glide__overlay-text {
+    margin-bottom: 1rem;
   }
 }

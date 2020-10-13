@@ -1,5 +1,5 @@
 .section {
-  padding: 10rem var(--section-padding-desktop-xl) 25rem;
+  padding: 10rem var(--section-padding-desktop-xl) 15rem;
   font-size: 1rem;
   display: flex;
   flex-direction: column;

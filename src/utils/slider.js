@@ -10,7 +10,7 @@ new Glide('.glide', {
   hoverpause: false,
   animationDuration: 800,
   breakpoints: {
-    800: {
+    900: {
       perView: 1,
     },
   },
