@@ -5,6 +5,7 @@
   "repository": "git@github.com:nemmtor/interactive-agency.git",
   "author": "nemmtor <kacper0witas@gmail.com>",
   "license": "MIT",
+  "homepage": "https://nemmtor.github.io/interactive-agency",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
