@@ -8,6 +8,7 @@
   --text-color-light: #eee;
   --color-dark: #333;
   --nav-height: 15rem;
+  --wga-bar-height: 10rem;
   --gradient-fancy: linear-gradient(
     45deg,
     rgba(110, 3, 181, 1) 15%,

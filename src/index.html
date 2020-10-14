@@ -13,13 +13,84 @@
     <title>Interactive agency</title>
   </head>
   <body>
-    <div class="loader-wrapper">
+    <div class="loader-wrapper" role="none">
       <div class="loader">
         <div class="loader-inner"></div>
       </div>
     </div>
 
     <div class="content content--hide">
+      <div class="wga-bar">
+        <button class="wga-bar__button" data-scroll href="#offer">
+          Przejdź do treści
+        </button>
+        <button class="wga-bar__button" data-normalversion>
+          Wersja graficzna
+        </button>
+        <div class="wga-bar__widget">
+          <p class="wga-bar__widget-text">Kontrast:</p>
+          <ul class="wga-bar__widget-list">
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-contrast>
+                C1
+              </button>
+            </li>
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-contrast>
+                C2
+              </button>
+            </li>
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-contrast>
+                C3
+              </button>
+            </li>
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-contrast>
+                C4
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="wga-bar__widget">
+          <p class="wga-bar__widget-text">Rozmiar czcionki:</p>
+          <ul class="wga-bar__widget-list">
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-fontsize>
+                A
+              </button>
+            </li>
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-fontsize>
+                A+
+              </button>
+            </li>
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-fontsize>
+                A++
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="wga-bar__widget">
+          <p class="wga-bar__widget-text">Odstępy:</p>
+          <ul class="wga-bar__widget-list">
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-spacing>
+                T^
+              </button>
+            </li>
+            <li class="wga-bar__widget-item">
+              <button class="wga-bar__widget-controller" data-spacing>
+                T>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="wgatoggler">
+        <img src="assets/eye.svg" alt="Eye" />
+      </button>
       <header class="header" id="home">
         <nav class="nav">
           <img
@@ -27,27 +98,34 @@
             src="./assets/logo.png"
             alt="Interactive agency"
           />
-          <button class="nav__burger">
+          <div
+            class="nav__burger"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="Open navigation"
+            role="button"
+          >
             <div class="nav__burger-bar"></div>
             <div class="nav__burger-bar"></div>
             <div class="nav__burger-bar"></div>
-          </button>
-          <ul class="nav__menu">
-            <li class="nav__menu-item">
+          </div>
+          <ul class="nav__menu" id="navigation" role="menu">
+            <li class="nav__menu-item" role="menuitem">
               <a class="nav__menu-link" href="#home" data-scroll>Home</a>
             </li>
-            <li class="nav__menu-item">
+            <li class="nav__menu-item" role="menuitem">
               <a class="nav__menu-link" href="#about" data-scroll>About us</a>
             </li>
-            <li class="nav__menu-item">
+            <li class="nav__menu-item" role="menuitem">
               <a class="nav__menu-link" href="#offer" data-scroll>Offer</a>
             </li>
-            <li class="nav__menu-item">
+            <li class="nav__menu-item" role="menuitem">
               <a class="nav__menu-link" href="#portfolio" data-scroll
                 >Portfolio</a
               >
             </li>
-            <li class="nav__menu-item">
+            <li class="nav__menu-item" role="menu-item">
               <button class="nav__cta" href="#contact" data-scroll>
                 Contact
               </button>
@@ -61,14 +139,14 @@
         <button class="header__cta cta" href="#contact" data-scroll>
           Ask for price
         </button>
-        <div class="header__scrolldown-container">
+        <button class="header__scrolldown-container" href="#offer" data-scroll>
           <img
             class="header__scrolldown-mouse"
             src="assets/mouse.png"
             alt="Computer mouse"
           />
           <p class="header__scrolldown-text">scroll down</p>
-        </div>
+        </button>
       </header>
 
       <main>
@@ -251,7 +329,7 @@
             <li class="about__person" data-aos="fade-up">
               <img
                 src="assets/about/face1.png"
-                alt="face"
+                alt="face of a first member"
                 class="about__person-face"
               />
               <h3 class="about__person-name">John Doe</h3>
@@ -262,7 +340,7 @@
             <li class="about__person" data-aos="fade-up">
               <img
                 src="assets/about/face2.png"
-                alt="face"
+                alt="face of a second member"
                 class="about__person-face"
               />
               <h3 class="about__person-name">John Doe</h3>
@@ -273,7 +351,7 @@
             <li class="about__person" data-aos="fade-up">
               <img
                 src="assets/about/face3.png"
-                alt="face"
+                alt="face of a third member"
                 class="about__person-face"
               />
               <h3 class="about__person-name">John Doe</h3>
@@ -284,7 +362,7 @@
             <li class="about__person" data-aos="fade-up">
               <img
                 src="assets/about/face4.png"
-                alt="face"
+                alt="face of a fourth member"
                 class="about__person-face"
               />
               <h3 class="about__person-name">John Doe</h3>

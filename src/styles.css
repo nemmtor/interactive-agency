@@ -1,16 +1,18 @@
-@import './styles/sections/loadingscreen.css';
+@import "./styles/sections/loadingscreen.css";
 
-@import './styles/settings.css';
-@import './styles/variables.css';
-@import './styles/animations.css';
-@import './styles/scrolltop.css';
+@import "./styles/settings.css";
+@import "./styles/variables.css";
+@import "./styles/animations.css";
+@import "./styles/scrolltop.css";
+@import "./styles/content.css";
+@import "./styles/wga.css";
 
 /* Sections */
-@import './styles/sections/header.css';
-@import './styles/sections/section.css';
-@import './styles/sections/best.css';
-@import './styles/sections/whatwedo.css';
-@import './styles/sections/glide.css';
-@import './styles/sections/about.css';
-@import './styles/sections/map.css';
-@import './styles/sections/footer.css';
+@import "./styles/sections/header.css";
+@import "./styles/sections/section.css";
+@import "./styles/sections/best.css";
+@import "./styles/sections/whatwedo.css";
+@import "./styles/sections/glide.css";
+@import "./styles/sections/about.css";
+@import "./styles/sections/map.css";
+@import "./styles/sections/footer.css";

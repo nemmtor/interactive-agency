@@ -62,16 +62,6 @@
   overflow: hidden;
 }
 
-.content {
-  opacity: 1;
-  transition: opacity 0.5s 0.5s ease;
-}
-
-.content--hide {
-  /* display: none; */
-  opacity: 0;
-}
-
 .loader-wrapper--faded {
   pointer-events: none;
   opacity: 0;

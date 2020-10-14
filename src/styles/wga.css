@@ -1,0 +1,92 @@
+.wgatoggler {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border: none;
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1000000;
+}
+
+.wga-bar {
+  display: none;
+  background: var(--bg-color);
+  color: var(--main-color);
+  height: var(--wga-bar-height);
+  border: 2px solid var(--main-color);
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wga-bar__button {
+  background: var(--bg-color);
+  color: var(--main-color);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: 2px solid var(--main-color);
+}
+
+.wga-bar__button:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.wga-bar__widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wga-bar__widget-text {
+  margin-bottom: 1rem;
+}
+
+.wga-bar__widget-list {
+  list-style: none;
+  display: flex;
+}
+.wga-bar__widget-controller {
+  margin-right: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.wga-bar__widget-item:last-child .wga-bar__widget-controller {
+  margin-right: 0;
+}
+
+.wga-bar__widget-controller {
+  background: black;
+  border: 2px solid white;
+  color: white;
+}
+
+.wga-bar__widget-item:first-child .wga-bar__widget-controller[data-contrast] {
+  background: black;
+  color: yellow;
+}
+
+.wga-bar__widget-item:nth-child(2) .wga-bar__widget-controller[data-contrast] {
+  background: yellow;
+  color: black;
+}
+
+.wga-bar__widget-item:nth-child(3) .wga-bar__widget-controller[data-contrast] {
+  background: black;
+  color: white;
+}
+
+.wga-bar__widget-item:last-child .wga-bar__widget-controller[data-contrast] {
+  background: white;
+  color: black;
+}
