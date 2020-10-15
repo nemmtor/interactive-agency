@@ -90,6 +90,7 @@
   color: var(--main-color);
   height: calc(100vh - var(--wga-bar-height));
   border: 2px solid var(--main-color);
+  box-shadow: none;
 }
 
 .content--wga .header::after {
@@ -137,6 +138,12 @@
 
 .content--wga .section--best::after {
   content: none;
+}
+
+.content--wga1 .nav__logo,
+.content--wga3 .nav__logo {
+  background: var(--main-color);
+  padding: 2rem;
 }
 
 .content--wga2 .header__scrolldown-mouse,
