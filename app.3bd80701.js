@@ -26,4 +26,4 @@ var t=document.querySelector("[data-normalversion]"),e=document.querySelector(".
 },{}],"A2T1":[function(require,module,exports) {
 "use strict";require("normalize.css"),require("./styles.css"),require("./utils/loadingscreen"),require("./utils/slider"),require("./utils/scrolling"),require("./utils/wga");
 },{"normalize.css":"DOAq","./styles.css":"Tnu0","./utils/loadingscreen":"Mjhb","./utils/slider":"g0mM","./utils/scrolling":"dgY0","./utils/wga":"jepv"}]},{},["A2T1"], null)
-//# sourceMappingURL=app.76bd8d7f.js.map
+//# sourceMappingURL=app.3bd80701.js.map
